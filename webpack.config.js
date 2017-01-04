@@ -21,7 +21,8 @@ module.exports = {
             'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
         }),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname)+'/index.ejs'
+            template: path.join(__dirname)+'/index.ejs',
+	    title : "mon titre"
         })
     ],
     module: {
